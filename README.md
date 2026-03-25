@@ -54,3 +54,13 @@ pip install -r requirements.txt
 
 ## License
 MIT — see [LICENSE](LICENSE)
+
+
+## MileStones
+
+### MileStone 1: Setting up the skeleton repo
+ - proper folder headers and structures in which the project continues
+ - Read me file to get the basic layout and explanations and relevant details of miestones
+ - license and requirements
+
+
