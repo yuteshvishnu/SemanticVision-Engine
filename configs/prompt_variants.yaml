@@ -1,0 +1,37 @@
+# Prompt robustness test sets
+# Each group tests the same semantic concept across 4 phrasings:
+#   base       → clean, direct description
+#   paraphrase → same meaning, different words
+#   abstract   → category-level, less specific
+#   vague      → minimal context, ambiguous
+
+prompts:
+  dog:
+    base:       "a dog sitting on grass"
+    paraphrase: "a canine resting on a lawn"
+    abstract:   "an animal on green ground"
+    vague:      "a furry creature near some plants"
+
+  person:
+    base:       "a person standing on a sidewalk"
+    paraphrase: "a human walking on a pavement"
+    abstract:   "a figure on an urban surface"
+    vague:      "someone near a road"
+
+  car:
+    base:       "a car parked on the street"
+    paraphrase: "a vehicle stopped on the road"
+    abstract:   "a large object on a paved surface"
+    vague:      "something metallic near a curb"
+
+  bird:
+    base:       "a bird perched on a branch"
+    paraphrase: "a flying animal resting on a tree"
+    abstract:   "a small creature in foliage"
+    vague:      "something small up high"
+
+  chair:
+    base:       "a chair in a room"
+    paraphrase: "a seat placed indoors"
+    abstract:   "a piece of furniture"
+    vague:      "something to sit on"

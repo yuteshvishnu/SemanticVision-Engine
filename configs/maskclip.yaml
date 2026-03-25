@@ -1,0 +1,21 @@
+model:
+  name: maskclip
+  clip_backbone: ViT-B-16   # options: ViT-B-16, ViT-L-14
+  pretrained: openai         # pretrained weights source
+  num_classes: 20            # PASCAL VOC has 20 object classes
+
+inference:
+  image_size: 512            # resize images to this before inference
+  batch_size: 1
+  device: cuda               # change to "cpu" if no GPU available
+
+dataset:
+  name: pascal_voc
+  root: data/pascal_voc/VOCdevkit/VOC2012/
+  split: val
+  num_samples: 200           # set to -1 to run on full val set
+
+output:
+  save_masks: true           # save raw binary mask PNGs
+  save_overlays: true        # save mask overlaid on original image
+  results_dir: results/maskclip/
